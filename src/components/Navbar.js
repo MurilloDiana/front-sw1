@@ -60,6 +60,18 @@ function NavBar() {
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/project"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineOrderedList
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Canciones
+              </Nav.Link>
+            </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
@@ -67,22 +79,11 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineOrderedList style={{ marginBottom: "2px" }} /> Canciones
+                <AiFillAudio style={{ marginBottom: "2px" }} /> Afinador
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiFillAudio
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Afinador
-              </Nav.Link>
-            </Nav.Item>
+         
 
             <Nav.Item>
               <Nav.Link
