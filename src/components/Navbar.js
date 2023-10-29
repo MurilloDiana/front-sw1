@@ -5,13 +5,15 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
+import { CgGitFork, CgUser } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineOrderedList,
+  AiFillAudio,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -65,7 +67,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineOrderedList style={{ marginBottom: "2px" }} /> Canciones
               </Nav.Link>
             </Nav.Item>
 
@@ -75,10 +77,10 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <AiFillAudio
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                Afinador
               </Nav.Link>
             </Nav.Item>
 
@@ -88,7 +90,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Tutorial
               </Nav.Link>
             </Nav.Item>
 
@@ -98,18 +100,19 @@ function NavBar() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <ImBlog style={{ marginBottom: "2px" }} /> Metronomo
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href=""
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                
+                <CgUser style={{ fontSize: "1.2em" }} />{" "}
+                
               </Button>
             </Nav.Item>
           </Nav>
@@ -117,6 +120,9 @@ function NavBar() {
       </Container>
     </Navbar>
   );
+
+
+
 }
 
 export default NavBar;
