@@ -741,3 +741,8 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+.fondo-iframe{
+  background-color:beige;
+  background-size: cover;
+}

@@ -36,7 +36,8 @@ function Afinador(){
                         src="/tuner-master/app/index.html"
                         title="Vista Embebida"
                         width="600"
-                        height="400"
+                        height="500"
+                        className="fondo-iframe"
                     ></iframe>
                     </Col>
                 </Row>
