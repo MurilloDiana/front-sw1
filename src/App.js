@@ -17,6 +17,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import PaymentButton from "./components/About2/PaymentButton";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -39,6 +40,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<Afinador />} />
+          <Route path="/about2" element={<PaymentButton/>} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>

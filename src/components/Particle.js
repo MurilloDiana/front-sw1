@@ -48,6 +48,7 @@ function Particle() {
         },
         retina_detect: true,
       }}
+
     />
   );
 }

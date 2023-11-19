@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.visa-icon,
+.paypal-icon,
+.qr-icon {
+  cursor: pointer;
+  margin: 0 20px; /* Espaciado entre iconos */
+}

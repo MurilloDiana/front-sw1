@@ -1,6 +1,7 @@
 import React,{ useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
+import axios from "axios";
 
 function Afinador(){
     useEffect(() => {
@@ -20,7 +21,7 @@ function Afinador(){
       }, []);
     return (
     <Container fluid className="about-section">
-        <Particle />
+        {/*<Particle/>*/}
             <Container>
                 <Row style={{ justifyContent: "center", padding: "10px" }}>
                     <Col
@@ -32,13 +33,14 @@ function Afinador(){
                             }}
                     >
                     <h2>Afinador Guitarras</h2>
-                    <iframe
-                        src="/tuner-master/app/index.html"
-                        title="Vista Embebida"
-                        width="600"
-                        height="500"
-                        className="fondo-iframe"
-                    ></iframe>
+                      <iframe
+                          src="/tuner-master/app/index.html"
+                          title="Vista Embebida"
+                          width="600"
+                          height="500"
+                          className="fondo-iframe"
+                          sandbox="allow-same-origin allow-scripts"
+                      ></iframe>
                     </Col>
                 </Row>
             </Container>
