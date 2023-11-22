@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col,Modal, Button ,Form , Image} from "react-bootstrap";
-//import Particle from "../Particle";
+import Particle from "../Particle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCcVisa, faPaypal } from "@fortawesome/free-brands-svg-icons";
 import { faQrcode } from "@fortawesome/free-solid-svg-icons";
