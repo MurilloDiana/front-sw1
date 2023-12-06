@@ -87,16 +87,6 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/about2"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiFillDollarCircle style={{ marginBottom: "2px" }} /> Payment
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >

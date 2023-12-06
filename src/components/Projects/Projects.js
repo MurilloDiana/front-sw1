@@ -8,9 +8,13 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import Navbar from "../Navbar";
 
 function Projects() {
   return (
+    <> 
+     <Navbar />
+   
     <Container fluid className="project-section">
       <Particle />
       <Container>
@@ -36,6 +40,7 @@ function Projects() {
         </Row>
       </Container>
     </Container>
+    </>
   );
 }
 

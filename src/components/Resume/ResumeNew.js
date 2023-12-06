@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/Soumyajit_Behera-BIT_MESRA.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
+import Navbar from "../Navbar";
+import homeLogo from "../../Assets/home-main.png";
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
 
@@ -16,40 +16,44 @@ function ResumeNew() {
   }, []);
 
   return (
-    <div>
-      <Container fluid className="resume-section">
-        <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
+    <>
+    <Navbar/>
+    
+    <Container fluid className="home-section" id="home">       
+        <Container className="home-content">
+          <Row>
+            <Col md={7} className="home-header">
+              <h1 style={{ paddingBottom: 15 }} className="heading">
+                Saludos!{" "}
+                <span className="wave" role="img" aria-labelledby="wave">
+                  👋🏻
+                </span>
+              </h1>
 
-        <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
+              <h1 className="heading-name">
+                Esto es
+                <strong className="main-name"> HARMONYTUTOR PRO</strong>
+              </h1>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
+              <div style={{ padding: 50, textAlign: "left" }}>
+                
+              </div>
+            </Col>
+
+            <Col md={5} style={{ paddingBottom: 20 }}>
+              <img
+                src={homeLogo}
+                alt="home pic"
+                className="img-fluid"
+                style={{ maxHeight: "450px" }}
+              />
+
+              <p> sss</p>
+            </Col>
+          </Row>
+        </Container>
       </Container>
-    </div>
+    </>
   );
 }
 

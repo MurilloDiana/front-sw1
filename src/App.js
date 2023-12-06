@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
-import Navbar from "./components/Navbar";
+import Login from "./components/User/Login";
 import Home from "./components/Home/Home";
-//import About from "./components/About/About";
+import HomeI from "./components/Home_Into/HomeI";
+import AboutA from "./components/About/About";
 import Afinador from "./components/About/Afinador";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
@@ -34,12 +35,15 @@ function App() {
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
+      
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomeI />} />
+        <Route path="/login" element={<Login />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<Afinador />} />
+          <Route path="/nosotros" element={<AboutA />} />
           <Route path="/about2" element={<PaymentButton/>} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />
