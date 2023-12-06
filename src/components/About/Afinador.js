@@ -2,6 +2,7 @@ import React,{ useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import axios from "axios";
+import Navbar from "../Navbar";
 
 function Afinador(){
     useEffect(() => {
@@ -20,6 +21,10 @@ function Afinador(){
         };
       }, []);
     return (
+      <>
+           <Navbar />
+
+      
     <Container fluid className="about-section">
         {/*<Particle/>*/}
             <Container>
@@ -45,6 +50,7 @@ function Afinador(){
                 </Row>
             </Container>
     </Container>
+    </>
     );
 }
 

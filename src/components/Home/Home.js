@@ -3,26 +3,28 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
+import About from "../About/About"; 
 import Type from "./Type";
+import Navbar from "../Navbar";
 
 function Home() {
   return (
     <section>
-      <Container fluid className="home-section" id="home">
-        <Particle />
+       <Navbar />
+      <Container fluid className="home-section" id="home">       
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+                Saludos!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
               <h1 className="heading-name">
-                We're
-                <strong className="main-name"> GUITARMENTOR</strong>
+                Esto es
+                <strong className="main-name"> HARMONYTUTOR PRO</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -42,6 +44,8 @@ function Home() {
         </Container>
       </Container>
       <Home2 />
+      <About />
+
     </section>
   );
 }
