@@ -10,6 +10,7 @@
     "@react-pdf/renderer": "^2.2.0",
     "@stripe/react-stripe-js": "^2.3.2",
     "@stripe/stripe-js": "^2.1.11",
+    "@teachablemachine/image": "^0.8.5",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
