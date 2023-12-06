@@ -8,6 +8,7 @@ import Afinador from "./components/About/Afinador";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import Register from "./components/User/Register";
 import {
   BrowserRouter as Router,
   Route,
@@ -40,6 +41,7 @@ function App() {
         <Routes>
         <Route path="/" element={<HomeI />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
           <Route path="/home" element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<Afinador />} />

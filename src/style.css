@@ -450,6 +450,7 @@ button:focus {
 
 .login-card {
   padding: 150px;
+  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-color: rgb(80, 24, 24);
   box-shadow: 0 4px 5px 3px rgba(187, 118, 118, 0.459);
   color: white;
@@ -459,6 +460,7 @@ button:focus {
 
 .login-card:hover {
   transform: scale(1.02);
+  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   box-shadow: 0 4px 4px 5px rgba(144, 72, 72, 0.561);
 }
 
@@ -476,7 +478,7 @@ button:focus {
 }
 
 .login-input {
-  width: 80%;
+  width: 50%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #fff;

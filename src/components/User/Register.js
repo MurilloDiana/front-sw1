@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -22,7 +21,7 @@ import logo from "../../Assets/logo.png";
 import avatar from "../../Assets/avatar.png";
 
 
-const Login = () => {
+const Register = () => {
     const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -65,11 +64,23 @@ const Login = () => {
       <div className="login-logo">
       <img src={avatar} className="login-logo" alt="brand" />
       </div>
-      <h2 className="login-title">Login</h2>
+      <h2 className="login-title">Registro</h2>
       <form>
         <input
+          type="text"
+          placeholder="Nombre Completo"
+          className="login-input"
+        />
+        <br/>
+        <input
+          type="text"
+          placeholder="Carnet de Identidad"
+          className="login-input"
+        />
+        <br/>
+        <input
           type="email"
-          placeholder="Correo electrónico"
+          placeholder="Correo Electronico"
           className="login-input"
         />
         <br/>
@@ -78,12 +89,18 @@ const Login = () => {
           placeholder="Contraseña"
           className="login-input"
         />
+        <br/>
+        <input
+          type="password"
+          placeholder="Confirmar Contraseña"
+          className="login-input"
+        />
         <div className="login-buttons"style={{ color: 'white' }}>
-        <Link to="/home" className="btn btn-login" style={{ color: 'white', border: '1px solid #fff',  }}>
-            Login
+        <Link to="/login" className="btn btn-login" style={{ color: 'white', border: '1px solid #fff',  }}>
+            Registro
           </Link>
-          <Link to="/register" className="btn btn-register" style={{ color: 'white', border: '1px solid #fff' }}>
-            Register
+          <Link to="/" className="btn btn-register" style={{ color: 'white', border: '1px solid #fff' }}>
+            Cancelar
           </Link>
         </div>
       </form>
@@ -94,4 +111,4 @@ const Login = () => {
 
 
 
-export default Login;
+export default Register;

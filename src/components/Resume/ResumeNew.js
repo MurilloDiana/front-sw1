@@ -8,13 +8,14 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import Navbar from "../Navbar";
 import homeLogo from "../../Assets/home-main.png";
+
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
-
+ 
   return (
     <>
     <Navbar/>
@@ -47,7 +48,9 @@ function ResumeNew() {
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
               />
+<iframe id="yourImageElementId">
 
+</iframe>
               <p> sss</p>
             </Col>
           </Row>
