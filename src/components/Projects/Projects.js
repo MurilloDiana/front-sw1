@@ -1,7 +1,8 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col} from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import { Link } from "react-router-dom";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
@@ -24,13 +25,22 @@ function Projects() {
         <p style={{ color: "white" }}>
           Aqui veras las ultimas canciones subidas a nuestra comunidad.
         </p>
+        <div className="song-card">
+        <div className="login-buttons"style={{ color: 'white' }}>
+          </div>
+        <Link to="/create" className="btn btn-login" style={{ color: 'white', border: '1px solid #fff',  }}>
+            Registra tu cancion preferia aqui!
+          </Link>
+          
+        </div>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
               title="Nombre Cancion"
-              description=""
+              description="algo"
+              genero="algo"
               
               demoLink="https://chatify-49.web.app/"
             />

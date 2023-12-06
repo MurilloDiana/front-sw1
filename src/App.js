@@ -9,6 +9,9 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Register from "./components/User/Register";
+import Song from "./components/Projects/ViewSong";
+import Create from "./components/Projects/CreateSong";
+import View from "./components/User/View";
 import {
   BrowserRouter as Router,
   Route,
@@ -41,6 +44,9 @@ function App() {
         <Routes>
         <Route path="/" element={<HomeI />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/view" element={<View />} />
+        <Route path="/song" element={<Song />} />
+        <Route path="/create" element={<Create />} />
         <Route path="/register" element={<Register />} />
           <Route path="/home" element={<Home />} />
           <Route path="/project" element={<Projects />} />

@@ -1,14 +1,16 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
-import Github from "./Github";
-import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
-import Toolstack from "./Toolstack";
+
+import View2 from "./View2";
+import laptopImg from "../../Assets/user.jpg";
+import Navbar from "../Navbar";
 import { Link } from "react-router-dom";
-function About() {
+function View() {
   return (
+    <>
+    
+
+    <Navbar />
     <Container fluid className="about-section">
    
       <Container>
@@ -22,9 +24,9 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Quieres formar parte de nuestra <strong className="purple">Comunidad VIP?</strong>
+               <strong className="purple">Mi Perfil</strong>
             </h1>
-            <Aboutcard />
+            <View2/>
           </Col>
           <Col
             md={5}
@@ -35,18 +37,10 @@ function About() {
           </Col>
         </Row>
        
-
-        <h1 className="project-heading">
-          <strong className="purple">Novedades</strong> de VIP
-        </h1>
-        <Toolstack />
-
-        <Link to="/about2" className="btn btn-register" style={{ color: 'white', border: '1px solid #fff',  }}>
-        COMPRA YA!
-          </Link>
       </Container>
     </Container>
+    </>
   );
 }
 
-export default About;
+export default View;

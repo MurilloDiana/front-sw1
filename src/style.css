@@ -457,6 +457,13 @@ button:focus {
   opacity: 0.9;
   transition: all 0.5s ease 0s;
 }
+.song-card {
+  padding: 50px;
+  color: white;
+  opacity: 0.9;
+  transition: all 0.5s ease 0s;
+}
+
 
 .login-card:hover {
   transform: scale(1.02);
@@ -485,7 +492,29 @@ button:focus {
   border-radius: 5px;
   color: white;
 }
-
+.song-input {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: black;
+  justify-content: space-between;
+}
+.song-output {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: white;
+  justify-content: space-between;
+  opacity: 0.8;
+}
+.cantante{
+  justify-content: space-between;
+  padding-right: 25px;
+}
 .login-buttons {
   display: flex;
   color : white;

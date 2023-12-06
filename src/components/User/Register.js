@@ -2,20 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork, CgUser } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
-import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-  AiOutlineOrderedList,
-  AiFillAudio,
-  AiFillDollarCircle,
-} from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
 import logo from "../../Assets/logo.png";
 import avatar from "../../Assets/avatar.png";
