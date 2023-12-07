@@ -21,7 +21,7 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Tutorial implementado con IA
+              <ImPointRight /> Guias implementado con IA
             </li>
             <li className="about-activity">
               <ImPointRight /> Gestion de Canciones

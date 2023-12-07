@@ -90,19 +90,11 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Tutorial
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Guias
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Metronomo
-              </Nav.Link>
-            </Nav.Item>
+
 
             <Nav.Item className="fork-btn">
               <Button
